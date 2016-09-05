@@ -1,0 +1,26 @@
+@import 'https://fonts.googleapis.com/css?family=Cabin|Lato';
+body {
+  padding-top: 50px;
+}
+.cover {
+  background: #011627;
+}
+.cover h1 {
+  font-size: 144px;
+  color: #E63946;
+}
+.cover p {
+  color: #FDF0D5;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Cabin';
+}
+div,
+p {
+  font-family: 'Cabin';
+}
