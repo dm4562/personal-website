@@ -13,6 +13,10 @@
 @magnolia: #F8F0FB;
 @pastel-gray: #CAD5CA;
 
+.navbar {
+  display: none;
+}
+
 .animate,
 div {
   -webkit-transition: all 0.3s !important;
@@ -20,7 +24,8 @@ div {
 }
 
 body {
-  padding-top: @navbar-height;
+  // padding-top: @navbar-height;
+  background-color: @eerie-black;
 }
 
 .cover-image {
@@ -118,5 +123,24 @@ p {
 
   100% {
     opacity: 1;
+  }
+}
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+  .cover {
+    .text {
+      font-size  : @font-size-h1;
+      color      : @slate-blue;
+      font-family: 'Cabin';
+    }
+
+    .typed-cursor {
+      opacity          : 1;
+      -webkit-animation: blink 0.7s infinite;
+      -moz-animation   : blink 0.7s infinite;
+      animation        : blink 0.7s infinite;
+      color            : @slate-blue;
+      font-size        : @font-size-h1;
+      font-family      : 'Cabin';
+    }
   }
 }

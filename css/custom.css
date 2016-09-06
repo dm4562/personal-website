@@ -1,11 +1,14 @@
 @import 'https://fonts.googleapis.com/css?family=Cabin|Lato';
+.navbar {
+  display: none;
+}
 .animate,
 div {
   -webkit-transition: all 0.3s !important;
   transition: all 0.3s !important;
 }
 body {
-  padding-top: 50px;
+  background-color: #211A1D;
 }
 .cover-image {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/splash2.jpeg");
@@ -85,5 +88,21 @@ p {
   }
   100% {
     opacity: 1;
+  }
+}
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 3) {
+  .cover .text {
+    font-size: 36px;
+    color: #8075FF;
+    font-family: 'Cabin';
+  }
+  .cover .typed-cursor {
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+    color: #8075FF;
+    font-size: 36px;
+    font-family: 'Cabin';
   }
 }
