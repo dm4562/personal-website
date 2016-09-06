@@ -1,13 +1,37 @@
 @import 'https://fonts.googleapis.com/css?family=Cabin|Lato';
+.animate,
+div {
+  -webkit-transition: all 0.3s !important;
+  transition: all 0.3s !important;
+}
 body {
   padding-top: 50px;
 }
+.cover-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/splash2.jpeg");
+  background-position: center center;
+  background-size: cover;
+}
 .cover {
-  background: #011627;
+  background: #211A1D;
 }
 .cover h1 {
-  font-size: 144px;
-  color: #E63946;
+  font-size: 72px;
+  color: #8075FF;
+}
+.cover .text {
+  font-size: 72px;
+  color: #8075FF;
+  font-family: 'Cabin';
+}
+.cover .typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+  color: #8075FF;
+  font-size: 72px;
+  font-family: 'Cabin';
 }
 .cover p {
   color: #FDF0D5;
@@ -23,4 +47,43 @@ h6 {
 div,
 p {
   font-family: 'Cabin';
+}
+.typed-cursor {
+  opacity: 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
 }

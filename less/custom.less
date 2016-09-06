@@ -1,6 +1,6 @@
 @import "variables";
 @import 'https://fonts.googleapis.com/css?family=Cabin|Lato';
-// @web-font-path: "https://fonts.googleapis.com/css?family=Lato";
+@tint: rgba(0, 0, 0, 0.3);
 @desire: #E63946;
 @jet: #3A3335;
 @maastricht-blue: #011627;
@@ -13,16 +13,46 @@
 @magnolia: #F8F0FB;
 @pastel-gray: #CAD5CA;
 
+.animate,
+div {
+  -webkit-transition: all 0.3s !important;
+  transition        : all 0.3s !important;
+}
+
 body {
   padding-top: @navbar-height;
 }
 
+.cover-image {
+  background-image   : linear-gradient( @tint, @tint ), url("../img/splash2.jpeg");
+  background-position: center center;
+  background-size    : cover;
+  // -webkit-filter: grayscale(100%);
+  // filter: grayscale(100%);
+}
+
 .cover {
-  background: @maastricht-blue;
+  background: @eerie-black;
 
   h1 {
-    font-size: @font-size-h1*4;
-    color    : @desire;
+    font-size: @font-size-h1*2;
+    color    : @slate-blue;
+  }
+
+  .text {
+    font-size  : @font-size-h1*2;
+    color      : @slate-blue;
+    font-family: 'Cabin';
+  }
+
+  .typed-cursor {
+    opacity          : 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation   : blink 0.7s infinite;
+    animation        : blink 0.7s infinite;
+    color            : @slate-blue;
+    font-size        : @font-size-h1*2;
+    font-family      : 'Cabin';
   }
 
   p {
@@ -42,4 +72,51 @@ h6 {
 div,
 p {
   font-family: 'Cabin';
+}
+
+// Blinking cursor
+.typed-cursor {
+  opacity          : 1;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation   : blink 0.7s infinite;
+  animation        : blink 0.7s infinite;
+}
+@keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes blink {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
 }
