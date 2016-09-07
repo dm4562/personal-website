@@ -15,7 +15,7 @@ body {
   background-size: cover;
 }
 .title {
-  font-size: 43.2px;
+  font-size: 36px;
   color: #C6D8D3;
   padding: 7px;
 }
@@ -32,7 +32,7 @@ body {
 .cover {
   background: #211A1D;
 }
-.cover .text {
+.cover .text-intro {
   font-size: 54px;
   color: #E63946;
   font-family: 'Roboto Mono';
@@ -64,6 +64,21 @@ p {
 .fa {
   display: inline-block;
   color: #C6D8D3;
+}
+.btn-danger {
+  color: #C6D8D3;
+  background-color: #E63946;
+  border-color: #d21a28;
+}
+.btn-danger:focus {
+  color: #C6D8D3;
+  background-color: #E63946;
+  border-color: #d21a28;
+}
+.btn-danger:hover {
+  color: #C6D8D3;
+  background-color: #E63946;
+  border-color: #d21a28;
 }
 .typed-cursor {
   opacity: 1;
@@ -105,7 +120,7 @@ p {
   }
 }
 @media (max-width: 991px) {
-  .cover .text {
+  .cover .text-intro {
     font-size: 32.4px;
     color: #E63946;
     font-family: 'Roboto Mono';

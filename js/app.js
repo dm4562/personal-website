@@ -1,6 +1,6 @@
 $(document).ready(function() {
   $(function() {
-    $(".text").typed({
+    $(".text-intro").typed({
       strings: [
         "I'm a developer",
         "I have a passion for building",
@@ -16,6 +16,7 @@ $(document).ready(function() {
 
 var setup = function() {
   var font = parseInt($(".text").css('font-size'));
+  $('ul.flaTimeline').flaTimeline();
   // console.log(font, font * 1.3);
   font = font * 1.3;
   // console.log("2", font);
