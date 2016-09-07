@@ -15,16 +15,26 @@ body {
   background-position: center center;
   background-size: cover;
 }
+.icon {
+  display: inline-block;
+  font-size: 7rem;
+  color: #E63946;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.skill {
+  width: 100%;
+}
 .cover {
   background: #211A1D;
 }
 .cover h1 {
   font-size: 72px;
-  color: #8075FF;
+  color: #E63946;
 }
 .cover .text {
   font-size: 72px;
-  color: #8075FF;
+  color: #E63946;
   font-family: 'Cabin';
 }
 .cover .typed-cursor {
@@ -32,7 +42,7 @@ body {
   -webkit-animation: blink 0.7s infinite;
   -moz-animation: blink 0.7s infinite;
   animation: blink 0.7s infinite;
-  color: #8075FF;
+  color: #E63946;
   font-size: 72px;
   font-family: 'Cabin';
 }
@@ -93,7 +103,7 @@ p {
 @media (max-width: 991px) {
   .cover .text {
     font-size: 36px;
-    color: #8075FF;
+    color: #E63946;
     font-family: 'Cabin';
   }
   .cover .typed-cursor {
@@ -101,7 +111,7 @@ p {
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
-    color: #8075FF;
+    color: #E63946;
     font-size: 36px;
     font-family: 'Cabin';
   }
