@@ -9,7 +9,7 @@ $(document).ready(function() {
       ],
       typeSpeed: 100,
       startDelay: 500,
-      callback: setTimeout(setup, 21000)
+      callback: setup()
     });
   });
 });
