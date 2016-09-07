@@ -44,7 +44,7 @@ body {
 }
 
 .title {
-  font-size: @font-size-h1*1.2;
+  font-size: @font-size-h1;
   color    : @colombia-blue;
   padding  : @padding-base-vertical;
 }
@@ -72,7 +72,7 @@ body {
 .cover {
   background: @eerie-black;
 
-  .text {
+  .text-intro {
     font-size  : @font-size-h1*1.5;
     color      : @desire;
     font-family: 'Roboto Mono';
@@ -111,7 +111,26 @@ p {
   display: inline-block;
   color  : @colombia-blue;
 }
-// Blinking cursor
+
+.btn-danger {
+  color           : @colombia-blue;
+  background-color: @desire;
+  border-color    : darken(@desire, 10%);
+
+  &:focus {
+    color           : @colombia-blue;
+    background-color: @desire;
+    border-color    : darken(@desire, 10%);
+  }
+
+  &:hover {
+    color           : @colombia-blue;
+    background-color: @desire;
+    border-color    : darken(@desire, 10%);
+  }
+}
+
+// Blinking cursor====================================================
 .typed-cursor {
   opacity          : 1;
   -webkit-animation: blink 0.7s infinite;
@@ -159,7 +178,7 @@ p {
 }
 @media (max-width: @screen-sm-max) {
   .cover {
-    .text {
+    .text-intro {
       font-size  : @font-size-h1 * 0.9;
       color      : @desire;
       font-family: 'Roboto Mono';
