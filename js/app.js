@@ -22,4 +22,7 @@ var setup = function() {
     eventColor: "#C6D8D3",
     borderRadius: "4px"
   });
+  setTimeout(function() {
+
+  }, 21000);
 };
