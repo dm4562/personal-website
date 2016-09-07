@@ -16,21 +16,8 @@ $(document).ready(function() {
 
 var setup = function() {
   var font = parseInt($(".text").css('font-size'));
-  $('ul.flaTimeline').flaTimeline();
-  // console.log(font, font * 1.3);
-  font = font * 1.3;
-  // console.log("2", font);
-  // $(".text").animate({
-  //   fontSize: font + 'px'
-  // }, {
-  //   duration: 500,
-  //   queue: false
-  // });
-  // $(".typed-cursor").animate({
-  //   fontSize: font + 'px'
-  // }, {
-  //   duration: 500,
-  //   queue: false
-  // });
-  // $(".navbar").slideDown("slow");
+  $('ul.flaTimeline').flaTimeline({
+    gridColor: "#C6D8D3",
+    eventColor: "#000000"
+  });
 };
