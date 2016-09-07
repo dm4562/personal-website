@@ -89,6 +89,11 @@ p {
   padding: inherit;
   font-weight: bold;
 }
+.flaTimeline .subtitle {
+  font-size: 18px;
+  color: #211A1D;
+  padding: inherit;
+}
 .flaTimeline .text {
   color: #211A1D;
 }

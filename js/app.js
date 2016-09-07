@@ -18,6 +18,7 @@ var setup = function() {
   var font = parseInt($(".text").css('font-size'));
   $('ul.flaTimeline').flaTimeline({
     gridColor: "#E63946",
-    eventColor: "#C6D8D3"
+    eventColor: "#C6D8D3",
+    borderRadius: "4px"
   });
 };
