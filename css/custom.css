@@ -81,7 +81,20 @@ p {
   border-color: #d21a28;
 }
 .flaTimeline {
-  border-top: 0px;
+  border-top: 0;
+}
+.flaTimeline .title-timeline {
+  font-size: 24px;
+  color: #E63946;
+  padding: inherit;
+  font-weight: bold;
+}
+.flaTimeline .text {
+  color: #211A1D;
+}
+.flaTimeline .date {
+  color: #C6D8D3;
+  font-size: 18px;
 }
 .typed-cursor {
   opacity: 1;
