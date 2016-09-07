@@ -16,9 +16,9 @@ $(document).ready(function() {
 
 var setup = function() {
   var font = parseInt($(".text").css('font-size'));
-  console.log(font, font * 1.3);
+  // console.log(font, font * 1.3);
   font = font * 1.3;
-  console.log("2", font);
+  // console.log("2", font);
   // $(".text").animate({
   //   fontSize: font + 'px'
   // }, {

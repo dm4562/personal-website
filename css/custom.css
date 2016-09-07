@@ -1,9 +1,8 @@
-@import 'https://fonts.googleapis.com/css?family=Cabin|Lato';
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono|Cabin|Lato';
 .navbar {
   display: none;
 }
-.animate,
-div {
+.animate {
   -webkit-transition: all 0.3s !important;
   transition: all 0.3s !important;
 }
@@ -14,6 +13,11 @@ body {
   background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url("../img/splash2.jpeg");
   background-position: center center;
   background-size: cover;
+}
+.title {
+  font-size: 43.2px;
+  color: #C6D8D3;
+  padding: 7px;
 }
 .icon {
   display: inline-block;
@@ -28,14 +32,10 @@ body {
 .cover {
   background: #211A1D;
 }
-.cover h1 {
-  font-size: 72px;
-  color: #E63946;
-}
 .cover .text {
-  font-size: 72px;
+  font-size: 54px;
   color: #E63946;
-  font-family: 'Cabin';
+  font-family: 'Roboto Mono';
 }
 .cover .typed-cursor {
   opacity: 1;
@@ -43,8 +43,8 @@ body {
   -moz-animation: blink 0.7s infinite;
   animation: blink 0.7s infinite;
   color: #E63946;
-  font-size: 72px;
-  font-family: 'Cabin';
+  font-size: 54px;
+  font-family: 'Roboto Mono';
 }
 .cover p {
   color: #FDF0D5;
@@ -55,11 +55,15 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Cabin';
+  font-family: 'Roboto Mono';
 }
 div,
 p {
-  font-family: 'Cabin';
+  font-family: 'Roboto Mono';
+}
+.fa {
+  display: inline-block;
+  color: #C6D8D3;
 }
 .typed-cursor {
   opacity: 1;
@@ -102,9 +106,9 @@ p {
 }
 @media (max-width: 991px) {
   .cover .text {
-    font-size: 36px;
+    font-size: 32.4px;
     color: #E63946;
-    font-family: 'Cabin';
+    font-family: 'Roboto Mono';
   }
   .cover .typed-cursor {
     opacity: 1;
@@ -112,7 +116,18 @@ p {
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
     color: #E63946;
-    font-size: 36px;
-    font-family: 'Cabin';
+    font-size: 32.4px;
+    font-family: 'Roboto Mono';
+  }
+  .title,
+  h1 {
+    font-size: 32.4px;
+  }
+  .icon {
+    display: inline-block;
+    font-size: 6rem;
+    color: #E63946;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 }

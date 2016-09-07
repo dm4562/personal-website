@@ -1,5 +1,5 @@
 @import "variables";
-@import 'https://fonts.googleapis.com/css?family=Cabin|Lato';
+@import 'https://fonts.googleapis.com/css?family=Roboto+Mono|Cabin|Lato';
 @tint: rgba(0, 0, 0, 0.3);
 @desire: #E63946;
 @jet: #3A3335;
@@ -12,13 +12,16 @@
 @han-purple: #6320EE;
 @magnolia: #F8F0FB;
 @pastel-gray: #CAD5CA;
+// ===========================
+@old-rose: #C97B84;
+@colombia-blue: #C6D8D3;
+@turquoise: #42F2F7;
 
 .navbar {
   display: none;
 }
 
-.animate,
-div {
+.animate {
   -webkit-transition: all 0.3s !important;
   transition        : all 0.3s !important;
 }
@@ -34,6 +37,16 @@ body {
   background-size    : cover;
   // -webkit-filter: grayscale(100%);
   // filter: grayscale(100%);
+}
+
+.banner {
+  // background-color: @desire;
+}
+
+.title {
+  font-size: @font-size-h1*1.2;
+  color    : @colombia-blue;
+  padding  : @padding-base-vertical;
 }
 
 .icon {
@@ -59,15 +72,10 @@ body {
 .cover {
   background: @eerie-black;
 
-  h1 {
-    font-size: @font-size-h1*2;
-    color    : @desire;
-  }
-
   .text {
-    font-size  : @font-size-h1*2;
+    font-size  : @font-size-h1*1.5;
     color      : @desire;
-    font-family: 'Cabin';
+    font-family: 'Roboto Mono';
   }
 
   .typed-cursor {
@@ -76,8 +84,8 @@ body {
     -moz-animation   : blink 0.7s infinite;
     animation        : blink 0.7s infinite;
     color            : @desire;
-    font-size        : @font-size-h1*2;
-    font-family      : 'Cabin';
+    font-size        : @font-size-h1*1.5;
+    font-family      : 'Roboto Mono';
   }
 
   p {
@@ -91,14 +99,18 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Cabin';
+  font-family: 'Roboto Mono';
 }
 
 div,
 p {
-  font-family: 'Cabin';
+  font-family: 'Roboto Mono';
 }
 
+.fa {
+  display: inline-block;
+  color  : @colombia-blue;
+}
 // Blinking cursor
 .typed-cursor {
   opacity          : 1;
@@ -148,9 +160,9 @@ p {
 @media (max-width: @screen-sm-max) {
   .cover {
     .text {
-      font-size  : @font-size-h1;
+      font-size  : @font-size-h1 * 0.9;
       color      : @desire;
-      font-family: 'Cabin';
+      font-family: 'Roboto Mono';
     }
 
     .typed-cursor {
@@ -159,8 +171,23 @@ p {
       -moz-animation   : blink 0.7s infinite;
       animation        : blink 0.7s infinite;
       color            : @desire;
-      font-size        : @font-size-h1;
-      font-family      : 'Cabin';
+      font-size        : @font-size-h1 * 0.9;
+      font-family      : 'Roboto Mono';
     }
+  }
+
+  .title,
+  h1 {
+    font-size: @font-size-h1 * 0.9;
+  }
+
+  .icon {
+    // width         : 100%;
+    // padding-bottom: 100%;
+    display      : inline-block;
+    font-size    : 6rem;
+    color        : @desire;
+    margin-top   : 10px;
+    margin-bottom: 10px;
   }
 }
