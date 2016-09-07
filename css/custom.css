@@ -80,6 +80,27 @@ p {
   background-color: #E63946;
   border-color: #d21a28;
 }
+.flaTimeline {
+  border-top: 0;
+}
+.flaTimeline .title-timeline {
+  font-size: 24px;
+  color: #E63946;
+  padding: inherit;
+  font-weight: bold;
+}
+.flaTimeline .subtitle {
+  font-size: 18px;
+  color: #211A1D;
+  padding: inherit;
+}
+.flaTimeline .text {
+  color: #211A1D;
+}
+.flaTimeline .date {
+  color: #C6D8D3;
+  font-size: 18px;
+}
 .typed-cursor {
   opacity: 1;
   -webkit-animation: blink 0.7s infinite;
