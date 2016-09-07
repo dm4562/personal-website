@@ -7,6 +7,7 @@ $(document).ready(function() {
         "I'm curious about how things work",
         "My name is Dhruv^"
       ],
+      contentType: 'text',
       typeSpeed: 100,
       startDelay: 500,
       callback: setTimeout(setup, 21000)
