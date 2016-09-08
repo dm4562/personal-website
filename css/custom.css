@@ -46,6 +46,9 @@ body {
   font-size: 54px;
   font-family: 'Roboto Mono';
 }
+.cover .show-later {
+  display: none;
+}
 .cover p {
   color: #FDF0D5;
 }

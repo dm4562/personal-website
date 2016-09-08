@@ -8,7 +8,7 @@ $(document).ready(function() {
         "My name is Dhruv^"
       ],
       contentType: 'text',
-      typeSpeed: 100,
+      typeSpeed: 70,
       startDelay: 500,
       callback: setup()
     });
@@ -23,6 +23,6 @@ var setup = function() {
     borderRadius: "4px"
   });
   setTimeout(function() {
-
-  }, 21000);
+    $('.show-later').slideDown();
+  }, 5000);
 };
