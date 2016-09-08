@@ -13,6 +13,13 @@ $(document).ready(function() {
       callback: setup()
     });
   });
+
+  $('.scroll-button').click(function() {
+    var content = $(".banner");
+    $('html, body').animate({
+      scrollTop: content.offset().top - content.height()
+    }, 700);
+  });
 });
 
 var setup = function() {
