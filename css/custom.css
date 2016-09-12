@@ -93,6 +93,7 @@ p {
   font-size: 27px;
   padding-left: 10px;
   padding-right: 10px;
+  font-weight: bold;
 }
 .project p {
   color: #011627;
