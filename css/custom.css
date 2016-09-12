@@ -16,7 +16,7 @@ body {
 }
 .title {
   font-size: 36px;
-  color: #FDF0D5;
+  color: #F8F0FB;
   padding: 7px;
 }
 .icon {
@@ -52,6 +52,9 @@ body {
 .cover p {
   color: #FDF0D5;
 }
+hr {
+  border-top: 1px solid #044e8a;
+}
 h1,
 h2,
 h3,
@@ -63,9 +66,6 @@ h6 {
 div,
 p {
   font-family: 'Roboto Mono';
-}
-.project-title {
-  color: #C6D8D3;
 }
 .project {
   width: 100%;
@@ -101,7 +101,7 @@ p {
 }
 .fa {
   display: inline-block;
-  color: #FDF0D5;
+  color: #F8F0FB;
 }
 .btn-danger {
   color: #C6D8D3;
@@ -117,6 +117,9 @@ p {
   color: #C6D8D3;
   background-color: #E63946;
   border-color: #d21a28;
+}
+.btn-danger .fa {
+  color: #C6D8D3;
 }
 .flaTimeline {
   border-top: 0;
