@@ -34,6 +34,11 @@ body {
 }
 .cover .text-intro {
   font-size: 54px;
+  color: #FDF0D5;
+  font-family: 'Roboto Mono';
+}
+.cover .intro-name {
+  font-size: 54px;
   color: #E63946;
   font-family: 'Roboto Mono';
 }
@@ -42,7 +47,7 @@ body {
   -webkit-animation: blink 0.7s infinite;
   -moz-animation: blink 0.7s infinite;
   animation: blink 0.7s infinite;
-  color: #E63946;
+  color: #FDF0D5;
   font-size: 54px;
   font-family: 'Roboto Mono';
 }
@@ -185,6 +190,11 @@ p {
 @media (max-width: 991px) {
   .cover .text-intro {
     font-size: 32.4px;
+    color: #FDF0D5;
+    font-family: 'Roboto Mono';
+  }
+  .cover .intro-name {
+    font-size: 32.4px;
     color: #E63946;
     font-family: 'Roboto Mono';
   }
@@ -193,7 +203,7 @@ p {
     -webkit-animation: blink 0.7s infinite;
     -moz-animation: blink 0.7s infinite;
     animation: blink 0.7s infinite;
-    color: #E63946;
+    color: #FDF0D5;
     font-size: 32.4px;
     font-family: 'Roboto Mono';
   }

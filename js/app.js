@@ -2,10 +2,10 @@ $(document).ready(function() {
   $(function() {
     $(".text-intro").typed({
       strings: [
-        "I'm a developer",
-        "I have a passion for building",
-        "I'm curious about how things work",
-        "My name is Dhruv^"
+        "a developer",
+        "a builder",
+        "a Linux enthusiast",
+        "a Yellow Jacket^"
       ],
       contentType: 'text',
       typeSpeed: 70,
