@@ -72,6 +72,9 @@ div,
 p {
   font-family: 'Roboto Mono';
 }
+p {
+  color: #F8F0FB;
+}
 .project {
   width: 100%;
   display: inline-block;
